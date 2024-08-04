@@ -1,0 +1,83 @@
+body {
+    font-family: Trebuchet MS  ;
+    background: linear-gradient(2deg, #a569bd, #e8daef );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #ecf0f1;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    max-width: 90%;
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: bold;
+}
+
+input{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+input:focus {
+    border-color: #c39bd3;
+    outline: none;
+    box-shadow: 0 0 5px rgba(239, 95, 255, 0.559);
+}
+
+
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #a569bd;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #c39bd3;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+}
+
+.success-message {
+    color: green;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
