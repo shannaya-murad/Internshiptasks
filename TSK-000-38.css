@@ -1,0 +1,661 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    list-style: none;
+    user-select: none;  
+} 
+
+body
+{
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, rgba(255,255,255,.5), #d9e6f2);
+    background: #ecf0f3;
+} 
+
+.fa
+{
+     color: #0c54a3;
+}
+
+.container
+{
+    width: 95%;
+    height: 161wovh;          
+    border-radius: 8px;
+    box-shadow: 13px 13px 20px #cbced1,
+               -13px -13px 20px #ffffff; 
+}
+
+/*Top css*/
+
+.container .navbar
+ {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 8px 25px;
+     margin-top: .5em;
+ }
+
+ .container .navbar .logo
+ {
+     display: flex;
+     align-items: center;
+ }
+
+ .container .navbar .logo .logoname
+ {
+     font-size: 18px; 
+     margin-left: .5em;
+     text-shadow: 1px 1px 1px rgba(16,16,16,.1),
+      ;
+ }
+
+ .container .navbar .logo img
+ {
+     animation: rotate 8s linear infinite;  
+ }
+
+ @keyframes rotate
+ {
+     from
+     {
+         transform: rotate(-360deg);
+     }
+ }
+
+ .container .navbar .time-period
+ {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   
+ }
+
+ .container .navbar .time-period .select
+ {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 0 25px;  
+     border-radius: 8px;
+     box-shadow: inset 3px 3px 3px #cbced1,
+                 inset -3px -3px 3px #ffffff;
+ }
+
+ .container .navbar .time-period .select div
+ {
+    margin: 8px;
+ }
+
+ .container .navbar .time-period .select div .fa
+ {
+     margin: 0 5px;
+ }
+
+ .container .navbar .time-period .select span
+ {
+     font-weight: 700;
+     font-size: 16px;
+ }
+
+ .container .navbar .time-period .custom select
+ {
+     outline: none;
+     border: none;
+     padding: 6px 10px;
+     background: transparent;
+     border-radius: 8px;
+     box-shadow: inset 3px 3px 3px #cbced1,
+                 inset -3px -3px 3px #ffffff;
+ }
+
+ /*Top css end*/ 
+
+ /*mid css*/
+
+ 
+ .container-body 
+ {
+     display: grid;
+     grid-template-columns: 18% auto;
+ }
+
+ .container-body .sidebar
+ { 
+     margin: 10px 0 0 20px; 
+     border-radius: 14px;
+     
+     padding: 10px;   
+     border-radius: 8px;
+     box-shadow: 13px 13px 20px #cbced1,
+                  -13px -13px 20px #ffffff;
+    
+ }
+
+ .container-body .sidebar ul li
+ {
+     padding: 10px 10px;
+     margin: 5px 0; 
+ }
+
+ .container-body .sidebar ul li a
+ {
+     color: #000;
+     text-transform: capitalize; 
+     font-weight: 700;
+ }
+
+ .container-body .sidebar ul li .fa
+ {
+     font-size: 18px;
+     padding: 0 5px;
+ } 
+
+ .container-body .sidebar ul .dropdown a
+ {
+    margin: 5px 0;
+    text-transform: capitalize;
+    color: #000;
+    padding: 8px;
+    padding-left: 40px;
+      box-shadow: inset 3px 3px 3px #cbced1,
+    inset -3px -3px 3px #ffffff; 
+    border-radius: 14px;   
+   
+ }
+
+ .container-body .sidebar ul .dropdown #das
+ {  
+    box-shadow: inset 3px 3px 3px #cbced1,
+    inset -3px -3px 3px #ffffff; 
+    border-radius: 14px;    
+ }
+
+ .container-body .sidebar ul .dashboard
+ {
+     background: #0c54a3;
+     color: #fff;
+     border-radius: 8px;
+     padding: 10px;
+ }
+
+ .container-body .sidebar ul .dashboard a
+ {
+     color: #fff;
+ }
+
+ .container-body .sidebar ul .notification span
+ {
+    font-size: 10px;
+    background: #0c54a3; 
+    color: #fff; 
+    padding: 3px 8px; 
+    font-weight: 700;
+    border-radius: 14px;
+ }
+
+ .container-body .sidebar ul .profile
+ {
+     position: relative;
+     top: 1.3em;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     box-shadow: inset 3px 3px 3px #cbced1,
+                 inset -3px -3px 3px #ffffff;
+     border-radius: 12px;
+   
+ } 
+
+ .container-body .sidebar ul .profile img
+ {
+     border-radius: 50%;
+ }
+
+ .container-body .sidebar ul .profile .name
+ {
+     margin: 3px 0;
+     text-transform: capitalize;
+     font-weight: 700;
+ }
+
+ .container-body .sidebar ul .profile .username
+ {
+     color: #808080;
+     margin: 2px 0;
+ }
+
+ .container-body .sidebar ul .profile a
+ {
+     margin: 5px 0;
+     text-transform: capitalize;
+     color: #0c54a3;
+ }
+
+ .container-body .main-body .tittle
+ {
+     padding: 15px;
+     margin: 0 20px; 
+ }
+
+ .container-body .main-body .tittle .greeting
+ {
+     text-transform: capitalize;
+     font-weight: 700;
+     font-size: 16px;
+ }
+
+ .container-body .main-body .tittle h2
+ {
+     font-size: 25px;
+     font-weight: normal;   
+ }
+
+ .container-body .main-body .cards
+ {
+     display: grid; 
+     grid-template-rows: 120px auto;
+     grid-gap: 20px;    
+     padding: 0 20px; 
+ }
+
+ 
+ .container-body .main-body .cards .row .col
+ { 
+      display: flex;
+     justify-content: center;
+     align-items: center; 
+     border-radius: 15px;
+     box-shadow: 13px 13px 20px #cbced1,
+     -13px -13px 20px #ffffff;
+ }   
+
+ .container-body .main-body .cards .row .col .card
+ {
+     display: flex; 
+     align-items: center; 
+     position: relative; 
+ }
+ 
+
+ /*Row-1 css*/
+
+ .container-body .main-body .cards .row-1
+ {
+     display: grid;
+     grid-template-columns: repeat(3,auto);
+     grid-gap: 20px;
+ }
+
+ 
+ .container-body .main-body .cards .row-1 .three
+ {
+    box-shadow: inset 3px 3px 3px #cbced1,
+                inset -3px -3px 3px #ffffff;
+ }
+
+ .container-body .main-body .cards .row-1 .col .card .logo 
+    {    
+        padding: 20px 24px;
+        border-radius: 50%;
+        box-shadow: inset 3px 3px 3px #cbced1,
+                    inset -3px -3px 3px #ffffff;    
+    }
+
+    .container-body .main-body .cards .row-1 .col .card .logo .fa
+    {
+        font-size: 30px;
+    }
+
+    .container-body .main-body .cards .row-1 .col .card  .content
+    {
+        margin-left: 1em;
+    }   
+
+    .container-body .main-body .cards .row-1 .col .card  .content h2
+    {
+        font-size: 30px;
+        font-weight: 500;
+        margin: 5px 0;
+    }
+
+    .container-body .main-body .cards .row-1 .col .card  .content a
+    {
+        font-size: 12px; 
+        color: #0c54a3;
+    }
+ /*Row-1 css end*/ 
+
+ /*chart-css*/
+   
+ .chart
+ {  
+     position: relative;
+     width: 100%;
+     height: 240px;    
+     border-radius: 14px;   
+     box-shadow: inset 2px 2px 2px #cbced1,
+                 inset -2px -2px 2px #ffffff;
+ }
+
+ .chart .status
+ { 
+     position: absolute;
+     top: 1.5em;
+     left: 1.8em;   
+ }
+ 
+ .chart .status span
+ {  
+     padding: 6px 15px;
+     margin: 0 .5em;
+     border-radius: 8px;  
+     box-shadow: inset 3px 3px 3px #cbced1,
+     inset -3px -3px 3px #ffffff;
+ }
+
+ .chart ul
+ {
+     position: absolute;
+     bottom: 2.2em;
+     left: 1em;
+ }
+ 
+ .chart ul li
+ {
+     list-style: none;
+     padding: .5em 0;
+     text-align: center;
+     font-size: 12px;
+     font-family: sans-serif;
+ }
+
+ .chart .box
+ {
+     position: relative;
+ }
+
+ .chart .box li
+ {
+     position: absolute;
+     top: 6.25em;
+     left: 5em;
+     width: 25px;
+     height: 110px;  
+     border-radius: 8px;
+     list-style: none; 
+     box-shadow: 13px 13px 20px #cbced1,
+                -13px -13px 20px #ffffff;
+ }
+
+ .chart .box li:nth-child(1)
+ {
+     left: 7em;
+ }
+
+ 
+ .chart .box li:nth-child(2)
+ {
+     left: 14em;
+ }
+
+ 
+ .chart .box li:nth-child(3)
+ {
+     left: 21em;
+ }
+
+ 
+ .chart .box li:nth-child(4)
+ {
+     left: 28em;
+ }
+
+ 
+ .chart .box li:nth-child(5)
+ {
+     left: 35em;
+ }
+
+ .chart .box li:nth-child(6)
+ {
+     left: 42em;
+ }
+
+ .chart .box li:nth-child(7)
+ {
+     left: 49em;
+ }
+
+ .chart .box li .text
+ {
+     position: absolute;
+     bottom: -2.5em;
+     left: -.5em; 
+     width: 80px; 
+     text-transform: uppercase;
+     font-size: 12px;
+     font-family: sans-serif;
+ }
+
+ .chart .box li .bar
+ {
+     position: absolute;
+     bottom: 0; 
+     width: 100%;  
+     background: #0c54a3   ;
+     /*background: #ecf0f3;*/
+     border-radius: 6px;
+     box-shadow: 13px 13px 20px #cbced1,
+                -13px -13px 20px #ffffff;
+ }
+
+ .chart .box li .bar1
+ {
+    animation: bar1 8s linear;
+    animation-fill-mode: forwards;
+ }
+
+ @keyframes bar1
+ {  
+    0%{height: 0;}
+    25%{height: 10%;}
+    50%{height: 15%;}
+    75%{height: 60%;}
+    100%{height: 40%;} 
+ }
+
+ 
+ .chart .box li .bar2
+ {
+    animation: bar2 8s linear;
+    animation-fill-mode: forwards; 
+ }
+
+ @keyframes bar2
+ { 
+     0%{height: 80%;}
+     25%{height: 20%;}
+     50%{height: 25%;}
+     75%{height: 80%;}
+     100%{height: 60%;} 
+ }
+
+ 
+ .chart .box li .bar3
+ {
+    animation: bar3 8s linear;
+    animation-fill-mode: forwards;
+ }
+
+ @keyframes bar3
+ { 
+     0%{height: 40%;}
+     25%{height: 10%;}
+     50%{height: 75%;}
+     75%{height: 30%;}
+     100%{height: 25%;} 
+ }
+
+ 
+ .chart .box li .bar4
+ {
+    animation: bar4 8s linear;
+    animation-fill-mode: forwards; 
+ }
+
+ @keyframes bar4
+ { 
+     0%{height: 100%;}
+     25%{height: 90%;}
+     50%{height: 75%;}
+     75%{height: 10%;}
+     100%{height: 55%;} 
+ }
+
+ 
+ .chart .box li .bar5
+ {
+    animation: bar5 8s linear;
+    animation-fill-mode: forwards;
+ }
+
+ @keyframes bar5
+ { 
+     0%{height: 0%;}
+     25%{height: 100%;}
+     50%{height: 80%;}
+     75%{height: 60%;}
+     100%{height: 40%;} 
+ }
+
+ .chart .box li .bar6
+ {
+    animation: bar6 8s linear;
+    animation-fill-mode: forwards;
+ }
+
+ @keyframes bar6
+ { 
+     0%{height: 60%;}
+     25%{height: 55%;}
+     50%{height: 45%;}
+     75%{height: 20%;}
+     100%{height: 45%;} 
+ }
+
+ .chart .box li .bar7
+ {
+    animation: bar7 8s linear;
+    animation-fill-mode: forwards;
+ }
+
+ @keyframes bar7    
+ { 
+     0%{height: 80%;}
+     25%{height: 50%;}
+     50%{height: 35%;}
+     75%{height: 70%;}
+     100%{height: 90%;} 
+ }
+
+ /*chart css end*/ 
+
+ /*Row-3 css*/
+
+ .container-body .main-body .cards .row-3   
+ {
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    grid-gap: 20px;
+ }
+
+ .container-body .main-body .cards .row-3 .col
+ {
+     height: 80px;
+     transition: 1s;
+     box-shadow: inset 3px 3px 3px #cbced1,
+                 inset -3px -3px 3px #ffffff;
+ }
+
+ .container-body .main-body .cards .row-3 .col:hover
+    {
+        height: 80px;
+        box-shadow: 13px 13px 20px #cbced1,
+                    -13px -13px 20px #ffffff;
+ }
+
+     .container-body .main-body .cards .row-3 .col .card .logo 
+    {   
+        padding: 20px 25px; 
+    }
+
+    .container-body .main-body .cards .row-3 .col .card .logo .fa
+    {
+        font-size: 28px;
+    }
+
+    .container-body .main-body .cards .row-3 .col .card  .content h1
+    { 
+         font-size: 18px;
+         font-weight: 500;
+    } 
+
+
+    /*--------*/
+    
+/* Announcements Section */
+
+
+/* Styles for the individual announcement cards */
+.announcement-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    overflow-x: hidden;
+    padding: 35px 15px 20px 20px;
+    /*padding-top: 35px;
+    padding-left: 20px;
+    padding-right: 15px;*/
+}
+
+.announcement-section h2{
+    font-size: 2.5em;
+    text-align: center;
+    padding-top: 25px;
+    
+}
+.announcement-card {
+    background-color: #ecf0f3;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1 1 45%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.announcement-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.announcement-card h3 {
+    font-size: 20px;
+    color: #0c54a3;
+    margin-bottom: 10px;
+}
+
+.announcement-card p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
