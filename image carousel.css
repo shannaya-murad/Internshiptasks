@@ -1,0 +1,85 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;  
+} 
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url("bg2.jpg") center;
+}
+
+.slider-wrapper{
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 70px 55px;
+}
+
+.cardslist .cardsitem {
+    color: #fff;
+    user-select: none;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    backdrop-filter: blur(30px);
+    background: rgba(255,255,255,0.2);
+    border: 1px solid rgba(255,255,255,0.5);
+}
+
+.cardslist .cardsitem .image{
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    margin-bottom: 40px;
+    border: 3px solid #fff;
+    padding: 4px;
+}
+
+.cardslist .cardsitem .subtitle{
+    font-size: 1.15rem;
+    color: #e3e3e3;
+    font-weight: 500;
+    margin: 14px 0 40px;
+
+}
+
+
+.slider-wrapper .swiper-button-prev{
+  color: #fff;
+  margin-top: -50px;
+  transition: 0.2s ease;
+}
+  
+.slider-wrapper .swiper-button-next{
+  color: #fff;
+  margin-top: -50px;
+}
+.slider-wrapper .swiper-button-prev :hover{
+  color: #4658ff;
+  margin-top: -50px;
+}
+.slider-wrapper .swiper-button-next{
+  color: #4658ff;
+  
+}
+
+@media (max-width: 768px){
+  .slider-wrapper {
+    margin: 0 10 px 40px;
+  }
+
+  .slider-wrapper .swiper-button-prev{
+    display: none;
+  }
+
+  .slider-wrapper .swiper-button-next{
+    display: none;
+  }
+}
